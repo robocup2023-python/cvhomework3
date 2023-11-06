@@ -53,13 +53,13 @@ def harris_corner_detection(image, ksize=3, k=0.04, threshold=0.01):
 
 
 if __name__ == "__main__":
-    image = cv2.imread("./sourcedata/seaisland.jpg",0)
+    image = cv2.imread("./sourcedata/plane.jpg",0)
     corners = harris_corner_detection(image)
     for corner in corners:
         x, y = corner
         cv2.circle(image, (y, x), 1, 255, 0)
 
     cv2.imshow("Harris Corner Detection", image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    cv2.imwrite("./output/cornerdetection/hharriscorner1.jpg",image)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+    cv2.imwrite("./output/cornerdetection/harriscorner1.jpg",image)
