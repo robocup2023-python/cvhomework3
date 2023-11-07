@@ -1,4 +1,6 @@
 ### 文件说明
+敬志扬 2226114044 计算机2201    
+
 - `cornerdetection.py` 是使用了harri角点检测的代码
   结果保留在 `./output/cornerdetection/`文件夹下
   
